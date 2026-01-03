@@ -10,7 +10,7 @@ const Landing = () => {
         Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.
       </div>
 
-      <div className="mt-16 bg-[#387ED1] text-white text-2xl flex  font-inter rounded-md  w-60 p-4 justify-center hover:bg-black cursor-pointer">
+      <div className="mt-16 bg-[#387ED1] text-white text-2xl flex  font-inter rounded-md  w-65 px-4 py-3 justify-center hover:bg-black cursor-pointer">
         Sign up for free
       </div>
     </div>

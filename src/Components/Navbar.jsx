@@ -1,6 +1,6 @@
 
 const Navbar = () => {
-  const navItem = "px-5 py-6 text-[#666] hover:text-[#387ed1] font-inter text-lg";
+  const navItem = "px-5 py-6 text-[#666] hover:text-[#387ed1] font-inter font-light cursor-pointer text-lg ";
 
   return (
     <nav className="w-full shadow-[2px_1px_2px_#eee] box-border">
