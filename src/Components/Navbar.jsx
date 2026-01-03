@@ -1,20 +1,30 @@
+
 const Navbar = () => {
+  const navItem = "px-5 py-6 text-[#666] hover:text-[#387ed1] font-inter text-lg";
+
   return (
-    <div className="flex justify-around shadow-[2px_1px_2px_#eee] box ">
-      <div>
-        <img src="https://zerodha.com/static/images/logo.svg" className="w-32.25 h-4.25 mt-7.5 " alt="" />
+    <nav className="w-full shadow-[2px_1px_2px_#eee] box-border">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
+
+        <img
+          src="https://zerodha.com/static/images/logo.svg"
+          className="w-[200px] h-auto"
+          alt="Zerodha"
+        />
+
+        <div className="flex items-center">
+          <a href="/" className={navItem}>Signup</a>
+          <a href="/" className={navItem}>About</a>
+          <a href="/" className={navItem}>Products</a>
+          <a href="/" className={navItem}>Pricing</a>
+          <a href="/" className={navItem}>Support</a>
+
+        </div>
+
+
       </div>
+    </nav>
+  );
+};
 
-      <div className="flex justify-between">
-        <a href="/" className="p-6.25 text-[#666] hover:text-[#387ed1]">Signup</a>
-        <a href="/" className="p-6.25 text-[#666] hover:text-[#387ed1]">About</a>
-        <a href="/" className="p-6.25 text-[#666] hover:text-[#387ed1]">Products</a>
-        <a href="/" className="p-6.25 text-[#666] hover:text-[#387ed1]">Pricing</a>
-        <a href="/" className="p-6.25 text-[#666] hover:text-[#387ed1]">Support</a>
-
-
-      </div>
-    </div>
-  )
-}
-export default Navbar
+export default Navbar;
