@@ -1,6 +1,7 @@
-const Landing = () => {
+const Landing = ({ box }) => {
   return (
     <div className="justify-items-center">
+      {box && <div className="bg-red-200 absolute w-[400px] h-[200px] z-10 ">hi</div>}
       <img src="https://zerodha.com/static/images/landing.svg" alt="" className='mt-16 scale-90' />
 
       <div className="text-[#424242] text-4xl font-inter mt-16 font-[420] tracking-wide">
