@@ -10,25 +10,26 @@ const Navbar = ({ box, setBox }) => {
 
   return (
     <nav className="w-full shadow-[2px_1px_2px_#eee] box-border">
-      <div className="mx-auto flex items-center justify-around px-6">
-        <img
-          src="https://zerodha.com/static/images/logo.svg"
-          className="w-[200px] h-auto"
-          alt="Zerodha"
-        />
+      <div className=" flex items-center justify-around">
 
-        <div className="flex items-center">
+        <div className="mr-40">
+          <img
+            src="https://zerodha.com/static/images/logo.svg"
+            className="w-[200px] h-auto"
+            alt="Zerodha"
+          />
+        </div>
+        <div className="flex items-center right-60 mx-6">
+
           <a href="/" className={navItem}>Signup</a>
           <a href="/" className={navItem}>About</a>
           <a href="/" className={navItem}>Products</a>
           <a href="/" className={navItem}>Pricing</a>
           <a href="/" className={navItem}>Support</a>
 
-          {/* Hamburger */}
           <div
             onClick={displayBox}
             className="mx-2 px-5 py-6 cursor-pointer"
-            aria-label="Menu"
           >
             <span className="block h-[3px] w-6 bg-[#424242] rounded-full my-1"></span>
             <span className="block h-[3px] w-6 bg-[#424242] rounded-full my-1"></span>
