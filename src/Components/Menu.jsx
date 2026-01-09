@@ -2,8 +2,11 @@
 
 
 import MenuItem from "./MenuItem";
-
 const Menu = () => {
+
+
+
+  const menuClass = "px-8 py-1 text-lg font-inter font-light "
   return (
     <div>
 
@@ -35,13 +38,36 @@ const Menu = () => {
 
 
         <div className="bg-[#fafafb] basis-3/5">
-          hi
+          <div className="flex">
+            <div>
+              <div className="px-8 py-4 mt-8 font-inter text-xl font-normal">
+                Utilities
+              </div>
+              <div>
+                <div className={menuClass}>calculator</div>
+                <div className={menuClass}> Brokerage calculator </div>
+                <div className={menuClass}> Margin calculator </div>
+                <div className={menuClass}> SIP calculator </div>
+              </div>
+            </div >
+            <div>
+              <div className="px-8 py-4 mt-8 font-inter text-xl font-normal">
+                Utilities
+              </div>
+              <div>
+                <div className={menuClass}>calculator</div>
+                <div className={menuClass}> Brokerage calculator </div>
+                <div className={menuClass}> Margin calculator </div>
+                <div className={menuClass}> SIP calculator </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
 
 
-    </div>
+    </div >
   );
 };
 
